@@ -1,15 +1,12 @@
-:root {
-    --link-color: #2196F3;
-    --webstudio-color: #000000;
-    --color-text-primary: #212121;
-    --color-text-secondary: #FFFFFF;
-    --color-button: #F5F4FA;
-    --hero-button-hover: #188ce8;
-    --color-btn-shadow: #eeeeee;
-    --text: #757575;
-    --footer-color: #2F303A;
-    --webstudio-border: #ECECEC;
-    --color-customers: #F5F5F5;
-    --color-social: #AFB1B8;
-    
-}
+$color-text-secondary: #fff;
+$color-text-primary: #212121;
+$link-color: #2196f3;
+$text: #757575;
+$color-button: #f5f4fa;
+$hero-button-hover: #188ce8;
+$color-social: #afb1b8;
+$footer-color: #2f303a;
+$contactsFooter: #d9d9d9;
+
+$cubicBezier: cubic-bezier(0.4, 0, 0.2, 1);
+$transitionDuration: 250ms;
