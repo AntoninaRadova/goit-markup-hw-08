@@ -1,12 +1,10 @@
 @import "./utils/variables";
+@import "./utils/placeholder";
 
 @import "./components/common";
-@import "./components/team";
-@import "./components/portfolio";
-@import "./components/footer";
-@import "./components/modal";
-@import "./components/header";
-@import "./components/hero";
-@import "./components/activity";
-
+@import "./components/logo";
 @import "./components/mobile-burger";
+@import "./components/activity";
+@import "./components/hero";
+@import "./components/header";
+@import "./components/footer";
