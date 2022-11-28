@@ -90,6 +90,8 @@ body {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    min-width: 200px;
+
     &:hover,
     &:focus {
         background-color: $hero-button-hover;
