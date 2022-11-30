@@ -249,43 +249,35 @@
     @media (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
+        // padding: 0 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
     }
 }
 
 .features-list__item {
-    @extend %item;
-    width: 100%;
-    margin: 0 auto;
-
-        &:not(:last-child) {
-            margin-bottom: 30px;
+    @media screen and (max-width: 767px) {
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
         }
-
-    @media (min-width: 480px) {
-        width: 100%;
-    }
-
-    @media (min-width: 768px) {
-        margin-left: 0;
-        width: calc((100% - 30px) / 2);
-
-        &:nth-child(2n-1) {
-            margin-right: 30px;
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            width: calc((100% - 1 * 60px) / 2);
+            &:not(:nth-last-child(-n + 2)) {
+                margin-bottom: 30px;
+            }
+            &:not(:nth-child(2n)) {
+                margin-right: 60px;
+            }
         }
-
-        &:nth-last-child(-n + 2) {
-            margin-bottom: 0;
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 90px) / 4);
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
         }
-    }
-
-    @media (min-width: 1200px) {
-        width: calc((100% - 3 * 30px) / 4);
-        margin-bottom: 0;
-
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
-    }
 }
 
 .features-div {
@@ -298,8 +290,7 @@
     background-color: $color-button;
     border: none;
     border-radius: 4px;
-
-
+    
     @media (min-width: 480px) {
         width: 100%;
     }
@@ -311,6 +302,9 @@
     @media (min-width: 1200px) {
         width: 270px;
     }
+
+    padding: 25px;
+    text-align: center;
 }
 
 .features-list__heading {
